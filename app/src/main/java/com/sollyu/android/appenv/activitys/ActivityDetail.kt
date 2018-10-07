@@ -266,6 +266,11 @@ class ActivityDetail : ActivityBase() {
         oieBuildModel.rightEditText = beanHookInfo?.buildModel
         oieBuildSerial.rightEditText = beanHookInfo?.buildSerial
         oieBuildVersionName.rightEditText = beanHookInfo?.buildVersionName
+
+        oieSamsungSalesCode.rightEditText = beanHookInfo?.samsungSalesCode
+        oieSamsungCountryCode.rightEditText = beanHookInfo?.samsungCountryCode
+        oieSamsungCountryisoCode.rightEditText = beanHookInfo?.samsungCountryisoCode
+
         oieAndroidId.rightEditText = beanHookInfo?.androidId
 
         oieSimLine1Number.rightEditText = beanHookInfo?.simLine1Number
@@ -292,6 +297,10 @@ class ActivityDetail : ActivityBase() {
         beanHookInfo.buildModel = oieBuildModel.rightEditText.toString()
         beanHookInfo.buildSerial = oieBuildSerial.rightEditText.toString()
         beanHookInfo.buildVersionName = oieBuildVersionName.rightEditText.toString()
+
+        beanHookInfo.samsungSalesCode = oieSamsungSalesCode.rightEditText.toString()
+        beanHookInfo.samsungCountryCode = oieSamsungCountryCode.rightEditText.toString()
+        beanHookInfo.samsungCountryisoCode = oieSamsungCountryisoCode.rightEditText.toString()
 
         beanHookInfo.androidId = oieAndroidId.rightEditText.toString()
 

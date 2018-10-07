@@ -62,6 +62,9 @@
     <string name="detail_build_manufacturer">手机厂商</string>
     <string name="detail_build_serial">手机序号</string>
     <string name="detail_build_version_name">手机版本</string>
+    <string name="detail_samsung_csc_code">三星CSC代码</string>
+    <string name="detail_samsung_country_code">三星国家代码</string>
+    <string name="detail_samsung_countryiso_code">三星国家ISO代码</string>
     <string name="detail_sim_phone_number">手机号</string>
     <string name="detail_sim_device_id">IMEI</string>
     <string name="detail_sim_subscriber_id">IMSI</string>

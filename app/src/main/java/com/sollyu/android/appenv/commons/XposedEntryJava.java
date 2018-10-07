@@ -153,6 +153,15 @@ public class XposedEntryJava implements IXposedHookLoadPackage {
         if (xposedPackageJson.has("android.os.Build.VERSION.RELEASE")) {
             XposedHelpers.setStaticObjectField(Build.VERSION.class, "RELEASE", xposedPackageJson.getString("android.os.Build.VERSION.RELEASE"));
         }
+        if (xposedPackageJson.has("ro.csc.sales_code")) {
+            buildValueHashMap.put("ro.csc.sales_code", xposedPackageJson.getString("ro.csc.sales_code"));
+        }
+        if (xposedPackageJson.has("ro.csc.country_code")) {
+            buildValueHashMap.put("ro.csc.country_code", xposedPackageJson.getString("ro.csc.country_code"));
+        }
+        if (xposedPackageJson.has("ro.csc.countryiso_code")) {
+            buildValueHashMap.put("ro.csc.countryiso_code", xposedPackageJson.getString("ro.csc.countryiso_code"));
+        }
         XposedBridgeHookAllMethods(XposedHelpers.findClass("android.os.SystemProperties", loadPackageParam.classLoader), "get", new XC_MethodHook() {
             @Override
             protected void afterHookedMethod(MethodHookParam methodHookParam) throws Throwable {
@@ -308,6 +317,9 @@ public class XposedEntryJava implements IXposedHookLoadPackage {
                 "android.os.Build.ro.product.model",
                 "android.os.Build.ro.serialno",
                 "android.os.Build.VERSION.RELEASE",
+                "ro.csc.sales_code",
+                "ro.csc.country_code",
+                "ro.csc.countryiso_code",
                 "android.os.SystemProperties.android_id",
                 "android.telephony.TelephonyManager.getLine1Number",
                 "android.telephony.TelephonyManager.getDeviceId",

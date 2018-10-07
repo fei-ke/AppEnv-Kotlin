@@ -51,6 +51,22 @@
             style="@style/OptionItem"
             app:leftText="@string/detail_build_version_name" />
 
+        <com.sollyu.android.option.item.OptionItemEdit
+            android:layout_marginTop="20dp"
+            android:id="@+id/oieSamsungSalesCode"
+            style="@style/OptionItem"
+            app:leftText="@string/detail_samsung_csc_code" />
+
+        <com.sollyu.android.option.item.OptionItemEdit
+            android:id="@+id/oieSamsungCountryCode"
+            style="@style/OptionItem"
+            app:leftText="@string/detail_samsung_country_code" />
+
+        <com.sollyu.android.option.item.OptionItemEdit
+            android:id="@+id/oieSamsungCountryisoCode"
+            style="@style/OptionItem"
+            app:leftText="@string/detail_samsung_countryiso_code" />
+
         <!--Android Id-->
         <com.sollyu.android.option.item.OptionItemEdit
             android:id="@+id/oieAndroidId"

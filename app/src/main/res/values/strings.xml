@@ -66,6 +66,9 @@
     <string name="detail_build_model">Build Model</string>
     <string name="detail_build_serial">Build Serial</string>
     <string name="detail_build_version_name">Build Version Name</string>
+    <string name="detail_samsung_csc_code">Samsung CSC Code</string>
+    <string name="detail_samsung_country_code">Samsung Country Code</string>
+    <string name="detail_samsung_countryiso_code">Samsung Country ISO Code</string>
     <string name="detail_sim_phone_number">Phone Number</string>
     <string name="detail_sim_device_id">Imei</string>
     <string name="detail_sim_subscriber_id">Sim Subscriber Id</string>

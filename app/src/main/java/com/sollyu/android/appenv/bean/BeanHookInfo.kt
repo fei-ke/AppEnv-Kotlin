@@ -24,6 +24,15 @@ class BeanHookInfo {
     @JSONField(name = "android.os.Build.VERSION.RELEASE")
     var buildVersionName:String? = null
 
+    @JSONField(name = "ro.csc.sales_code")
+    var samsungSalesCode:String? = null
+
+    @JSONField(name = "ro.csc.country_code")
+    var samsungCountryCode:String? = null
+
+    @JSONField(name = "ro.csc.countryiso_code")
+    var samsungCountryisoCode:String? = null
+
     @JSONField(name = "android.os.SystemProperties.android_id")
     var androidId:String? = null
 
